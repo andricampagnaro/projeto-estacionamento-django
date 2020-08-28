@@ -1,0 +1,10 @@
+{% extends 'estacionamento/base.html' %}
+
+{% block content %}
+    <h2>Lista de Vagas</h2>
+    {% for vaga in vagas %}
+    <div class="post">
+        <p><b>{{ vaga.nome_vaga }}:</b> {{ vaga.status_vaga }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}
