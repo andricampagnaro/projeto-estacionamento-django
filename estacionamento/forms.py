@@ -6,4 +6,4 @@ class MenuForm(forms.ModelForm):
 
     class Meta:
         model = Vaga
-        fields = ('nome_vaga', 'status_vaga',)
+        fields = ('status_vaga',)

@@ -4,7 +4,7 @@
     <h2>Lista de Vagas</h2>
     {% for vaga in vagas %}
     <div class="post">
-        <p><a href="{% url 'detalhe_vaga' pk=vaga.pk %}"><b>{{ vaga.nome_vaga }}</a>:</b> {{ vaga.status_vaga }}</p>
+        <p><a href="{% url 'editar_vaga' pk=vaga.pk %}"><b>{{ vaga.nome_vaga }}</a>:</b> {{ vaga.status_vaga }}</p>
     </div>
     {% endfor %}
 {% endblock %}

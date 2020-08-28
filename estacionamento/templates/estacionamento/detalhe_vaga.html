@@ -2,9 +2,7 @@
 
 {% block content %}
     <h2>Lista de Vagas</h2>
-    {% for vaga in vagas %}
     <div class="post">
-        <p><b>{{ vaga.nome_vaga }}:</b> {{ vaga.status_vaga }}</p>
+        <p><b>{{ vaga.nome_vaga }}:</b> {{ vaga.status_vaga }}<a class="btn btn-default" href="{% url 'editar_vaga' pk=vaga.pk %}"><span class="glyphicon glyphicon-pencil"></span></a></p>
     </div>
-    {% endfor %}
 {% endblock %}
